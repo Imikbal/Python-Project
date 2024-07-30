@@ -1,13 +1,11 @@
-''''
-1- sanke
-2- water
-3- gun
-'''
-compter=1
-yourar=(input("Enter your number:-"))
+import random
+print(" welcome to snake game")
+print(" g for gun\n s for snake\n w for water")
+compter=random.choice([1, 2, 3])
+yoursr=(input("Please chose g, s and w:-"))
 yourDict={"s":1, "w":2,"g":3}
 reverseDict = {1: "Snake",2: "Water", 3: "Gun"}
-you = yourDict[yourar]
+you =yourDict[yoursr]
 print(f"You chose {reverseDict[you]}\nComputer chose {reverseDict[compter]}")
 
 if(compter==you):
@@ -30,8 +28,6 @@ else:
 
     elif(compter == 3 and you == 1):
         print("You Lose!")
-    
-    
-
+   
     else:
         print("Something went wrong!")
